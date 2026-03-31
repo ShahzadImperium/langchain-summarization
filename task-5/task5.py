@@ -9,8 +9,11 @@ from langchain import hub
 from langchain.tools import Tool
 from dotenv import load_dotenv
 import os
+from pathlib import Path
+os.chdir(Path(__file__).parent)
 
-load_dotenv("../.env")
+
+load_dotenv()
 
 # Configure Azure OpenAI model
 llm = AzureChatOpenAI(

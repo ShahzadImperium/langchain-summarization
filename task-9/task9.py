@@ -7,8 +7,11 @@ from langchain_core.vectorstores import InMemoryVectorStore
 from langchain.retrievers.multi_query import MultiQueryRetriever
 from dotenv import load_dotenv
 import os
+from pathlib import Path
+os.chdir(Path(__file__).parent)
 
-load_dotenv("../.env")
+
+load_dotenv()
 
 # Configure Azure OpenAI model
 llm = AzureChatOpenAI(

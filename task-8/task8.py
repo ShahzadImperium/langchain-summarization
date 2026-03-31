@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import json
 import os
 
-load_dotenv("../.env")
+load_dotenv()
 
 # Configure Azure OpenAI model
 llm = AzureChatOpenAI(

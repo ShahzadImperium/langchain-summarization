@@ -4,8 +4,10 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_community.document_loaders import TextLoader
 from dotenv import load_dotenv
 import os
+from pathlib import Path
+os.chdir(Path(__file__).parent)
 
-load_dotenv("../.env")
+load_dotenv()
 
 # Configure Azure OpenAI model
 llm = AzureChatOpenAI(

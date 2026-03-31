@@ -6,8 +6,11 @@ from langchain_text_splitters import CharacterTextSplitter
 from langchain_core.vectorstores import InMemoryVectorStore
 from dotenv import load_dotenv
 import os
+from pathlib import Path
+os.chdir(Path(__file__).parent)
 
-load_dotenv("../.env")
+
+load_dotenv()
 
 # Configure Azure OpenAI model
 llm = AzureChatOpenAI(

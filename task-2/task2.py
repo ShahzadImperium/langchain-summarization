@@ -4,7 +4,7 @@ from langchain_core.output_parsers import StrOutputParser
 from dotenv import load_dotenv
 import os
 
-load_dotenv("../.env")
+load_dotenv()
 
 # Configure Azure OpenAI model
 llm = AzureChatOpenAI(
