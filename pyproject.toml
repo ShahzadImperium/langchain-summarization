@@ -1,15 +1,38 @@
 [project]
 name = "langchain-summarization"
 version = "0.1.0"
-description = "Default template for PDM package"
+description = "A project to master LangChain through structured tasks"
 authors = [
     {name = "Muhammad Shahzad", email = "Muhammad.Shahzad@imperiumdynamics.com"},
 ]
-dependencies = ["langchain==0.3.0", "langchain-openai==0.2.0", "langchain-community==0.3.0", "langchain-text-splitters==0.3.8", "openai==1.109.1", "python-dotenv>=1.2.2", "pypdf>=6.9.2", "beautifulsoup4>=4.14.3", "requests>=2.33.1"]
+dependencies = [
+    "langchain==0.3.0",
+    "langchain-openai==0.2.0",
+    "langchain-community==0.3.0",
+    "langchain-text-splitters==0.3.8",
+    "langchain-core==0.3.63",
+    "openai==1.109.1",
+    "python-dotenv",
+    "pypdf",
+    "beautifulsoup4",
+    "requests",
+]
 requires-python = "==3.14.*"
 readme = "README.md"
 license = {text = "MIT"}
 
-
 [tool.pdm]
 distribution = false
+
+[tool.pdm.scripts]
+task1 = "python task-1/task1.py"
+task2 = "python task-2/task2.py"
+task3 = "python task-3/task3.py"
+task4 = "python task-4/task4.py"
+task5 = "python task-5/task5.py"
+task6 = "python task-6/task6.py"
+task7 = "python task-7/task7.py"
+task8 = "python task-8/task8.py"
+task9 = "python task-9/task9.py"
+task10 = "python task-10/task10.py"
+task11 = "python task-11/task11.py"
