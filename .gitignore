@@ -18,3 +18,10 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+
+# PDM
+.pdm-python
+.pdm-build/
+
+# Requirements (using PDM instead)
+requirements.txt
